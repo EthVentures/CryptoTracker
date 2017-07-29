@@ -1,4 +1,4 @@
-# CryptoTracker 
+# CryptoTracker
 Monitoring CryptoCurrency exchanges to collect data for the algorithmic trading analysis. Pull Requests welcome and encouraged.
 
 # Supported Exchanges
@@ -45,3 +45,5 @@ eth.*.ticker
 
 # Additional Resources
 Use resources/configure-kibana.sh to automatically set default indexes, and import saved objects.
+# Powered By
+<a href="http://ethventures.io/" rel="EthVentures">![EthVentures](./resources/img/ethventures-logo.png)</a>
