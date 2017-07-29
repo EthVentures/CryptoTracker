@@ -5,8 +5,12 @@
           avelkoski
 """
 from elasticsearch import Elasticsearch, helpers
+from public.bitfinex import BitFinex_Market
+from public.bittrex import BitTrex_Market
 from public.gdax import GDAX_Market
 from public.gemini import Gemini_Market
+from public.kraken import Kraken_Market
+from public.poloniex import Poloniex_Market
 from dotenv import Dotenv
 from time import sleep
 import schedule
@@ -20,7 +24,8 @@ def main():
     logging.basicConfig(format='%(levelname)s:%(asctime)s %(message)s',level=settings.LOGLEVEL)
     es = Elasticsearch(settings.ELASTICSEARCH_CONNECT_STRING)
     logging.info('Application Started.')
-    exchanges = [GDAX_Market(),Gemini_Market()]
+    exchanges = [GDAX_Market(),Gemini_Market(), BitTrex_Market(),BitFinex_Market(),Poloniex_Market()]
+
     for exchange in exchanges:
         logging.info(exchange.exchange + ': activated.')
 
@@ -29,7 +34,7 @@ def main():
     logging.info('Application Started.')
     sleep(settings.INITIAL_SLEEP)
 
-    logging.info('Checking Indices...')
+    logging.info('Checking If Indices Exist...')
     utils.create_indices(es, settings.INITIAL_INDEX_ARRAY)
 
     logging.warn('Initiating Market Tracking.')

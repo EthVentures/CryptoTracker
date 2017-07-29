@@ -7,31 +7,30 @@ import logging
 import requests
 import utils
 
-class Gemini_Market(object):
-    """Gemini Market Data"""
+class Poloniex_Market(object):
+    """Poloniex Market Data"""
     def __init__(self):
-        self.api_url = settings.GEMINI_API_URL
-        self.exchange = "gemini"
-        self.books = ['asks','bids']
-        self.products = {'ETHUSD':'eth.gemini.ticker'}
-        if settings.GEMINI_API_URL[-1] == "/":
-            self.api_url = settings.GEMINI_API_URL[:-1]
+        self.api_url = settings.POLONIEX_API_URL
+        self.exchange = "poloniex"
+        self.products = {'USDT_ETH': 'eth.poloniex.ticker'}
+        self.books = ['asks', 'bids']
+        if settings.POLONIEX_API_URL[-1] == "/":
+            self.api_url = settings.POLONIEX_API_URL[:-1]
 
-    def normalize_ticker(self,data):
+    def normalize_ticker(self, data):
         clean_data = dict()
-        clean_data["ask"] = float(data["ask"])
-        clean_data["bid"] = float(data["bid"])
+        clean_data["ask"] = float(data["lowestAsk"])
+        clean_data["bid"] = float(data["highestBid"])
         clean_data["price"] = float(data["last"])
         return clean_data
 
-    def get_ticker(self,product):
+    def get_ticker(self, product):
         """Get current tick"""
-        data = dict()
         now = datetime.utcnow()
-        r = requests.get(self.api_url + '/pubticker/' + product)
+        r = requests.get(self.api_url + '/public?command=returnTicker')
         data = loads(r.text)
-        if 'last' in data:
-            data = self.normalize_ticker(data)
+        if product in data:
+            data = self.normalize_ticker(data[product])
             data["tracker_time"] = now
             data["exchange"] = self.exchange
             data["product"] = product

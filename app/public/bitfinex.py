@@ -5,32 +5,34 @@ from datetime import datetime
 import settings
 import logging
 import requests
+import random
+import time
 import utils
 
-class Gemini_Market(object):
-    """Gemini Market Data"""
+class BitFinex_Market(object):
+    """Bitfinex Market Data"""
     def __init__(self):
-        self.api_url = settings.GEMINI_API_URL
-        self.exchange = "gemini"
-        self.books = ['asks','bids']
-        self.products = {'ETHUSD':'eth.gemini.ticker'}
-        if settings.GEMINI_API_URL[-1] == "/":
-            self.api_url = settings.GEMINI_API_URL[:-1]
+        self.api_url = settings.BITFINEX_API_URL
+        self.exchange = 'bitfinex'
+        self.products = {'ethusd':'eth.bitfinex.ticker'}
+        if settings.BITFINEX_API_URL[-1] == "/":
+            self.api_url = settings.BITFINEX_API_URL[:-1]
 
     def normalize_ticker(self,data):
         clean_data = dict()
         clean_data["ask"] = float(data["ask"])
         clean_data["bid"] = float(data["bid"])
-        clean_data["price"] = float(data["last"])
+        clean_data["price"] = float(data["last_price"])
+        clean_data["volume"] = float(data["volume"])
+
         return clean_data
 
     def get_ticker(self,product):
         """Get current tick"""
-        data = dict()
         now = datetime.utcnow()
-        r = requests.get(self.api_url + '/pubticker/' + product)
+        r = requests.get(self.api_url + '/v1/pubticker/' + product)
         data = loads(r.text)
-        if 'last' in data:
+        if 'last_price' in data:
             data = self.normalize_ticker(data)
             data["tracker_time"] = now
             data["exchange"] = self.exchange
