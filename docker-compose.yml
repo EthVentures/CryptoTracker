@@ -1,0 +1,30 @@
+version: "2.0"
+services:
+    elasticsearch:
+      build: elasticsearch/
+      volumes:
+        - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      ports:
+        - "9200:9200"
+        - "9300:9300"
+      restart: always
+      environment:
+        ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+
+    kibana:
+      build: kibana/
+      volumes:
+        - ./kibana/config/:/usr/share/kibana/config
+      ports:
+        - "5601:5601"
+      links:
+        - elasticsearch
+      restart: always
+
+    app:
+      build: app/
+      depends_on:
+        - elasticsearch
+      links:
+        - elasticsearch
+      restart: always
