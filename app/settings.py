@@ -3,7 +3,7 @@ from dotenv import Dotenv
 dotenv = Dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 os.environ.update(dotenv)
 
-MARKET_REFRESH_RATE=1
+MARKET_REFRESH_RATE=15
 RETRY_RATE=20
 
 BITFINEX_API_URL = os.environ.get("BITFINEX_API_URL")

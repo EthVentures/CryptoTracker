@@ -1,5 +1,10 @@
 # CryptoTracker
-Monitoring CryptoCurrency exchanges to collect data for the algorithmic trading analysis. Pull Requests welcome and encouraged.
+CryptoTracker enables monitoring of cryptocurrency exchanges to collect data for the algorithmic trading analysis.  Use this open source project to track Price, Bid/Ask, Size, and Volume to test hypotheses about Ethereum, build machine learning models to predict price movements, understand volatility, arbitrage and more.
+
+CryptoTracker enables high-quality cryptocurrency R&D across all major, global exchanges.
+
+Pull Requests welcome and encouraged.
+
 
 # Supported Exchanges
  1. [BitFinex](https://bitfinex.com/)
@@ -14,6 +19,9 @@ Monitoring CryptoCurrency exchanges to collect data for the algorithmic trading 
 ![Dashboard 1](./resources/img/Dashboard.png "Dashboard 1")
 
 ![Dashboard 2](./resources/img/Dashboard2.png "Dashboard 2")
+
+# Requirements
+1. Docker
 
 # Configuration
 1. Rename app/default.env to app/.env
@@ -46,4 +54,6 @@ eth.*.ticker
 # Additional Resources
 Use resources/configure-kibana.sh to automatically set default indexes, and import saved objects.
 # Powered By
+<p align="center">
 <a href="http://ethventures.io/" rel="EthVentures">![EthVentures](./resources/img/ethventures-logo.png)</a>
+</p>
