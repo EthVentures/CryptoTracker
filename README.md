@@ -1,7 +1,5 @@
 # CryptoTracker
-CryptoTracker enables monitoring of cryptocurrency exchanges to collect data for analysis, tracking, and algorithmic trading.  Use this open source project to track Price, Bid/Ask, Size, and Volume to test hypotheses about Ethereum, build machine learning models to predict price movements, understand volatility, arbitrage and more.
-
-CryptoTracker enables high-quality cryptocurrency R&D across all major, global exchanges.
+CryptoTracker makes it easy for you to collect, store, analyze, visualize, and monitor cryptocurrency data. You can use this open source project to track Price, Bid/Ask Spreads, Size, and Volume, test hypotheses about markets, build machine learning models to predict price movements, understand volatility, arbitrage / algorithmically trade, and more. CryptoTracker enables high-quality cryptocurrency R&D across all major exchanges.
 
 Pull Requests welcome and encouraged.
 
@@ -30,7 +28,7 @@ Pull Requests welcome and encouraged.
 ```js
 docker-compose build && docker-compose up
 ```
-This will build then launch 3 docker containers. The first two being configurable builds Elastic Search and Kibana (customizable YML and Dockerfiles included). The third being a python2.7 container for our app which is automatically configured to run after an initial sleep timer. After the system loads, you should then be able to navigate to Kibana to see information starting to be entered into the system.
+This command will build and launch 3 docker containers: Elasticsearch, Kibana, and python2.7. Elasticsearch is used as our datastore, Kibana is used to setup visualizations and dashboards, and python2.7 operates our application. Elasticsearch and Kibana are customizable via .yml and Dockerfiles (included), and python2.7 is automatically configured for you to run after an initial setup delay. Once the system loads, which could take a few minutes, you should be able to navigate to Kibana to see all of the data that's flowing from the exchanges into Elasticsearch.
 
 http://localhost:5601/
 
@@ -41,7 +39,7 @@ eth.*.ticker
 *.*.ticker
 ```
 
- A json file containing saved objects and dashboards is provided under /resources. This file can be imported from Kibana's UI by navigating to Management->Saved Objects->Import. You should also configure the dashboard to auto reload.
+ A json file containing saved objects and dashboards is provided under /resources. This file can be imported from Kibana's UI by navigating to Management->Saved Objects->Import. You should also set the dashboard Auto-Refresh interval so that the visualizations update in real-time. 
 
 # Production Settings
  On a live system, vm_map_max_count should be permanently set in /etc/sysctl.conf:
