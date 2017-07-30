@@ -18,7 +18,7 @@ Pull Requests welcome and encouraged.
 ![Dashboard 2](./resources/img/Dashboard2.png "Dashboard 2")
 
 # Requirements
-1. Docker
+1. [Docker](https://docker.com)
 
 # Configuration
 1. Rename app/default.env to app/.env
@@ -39,7 +39,7 @@ eth.*.ticker
 *.*.ticker
 ```
 
- A json file containing saved objects and dashboards is provided under /resources. This file can be imported from Kibana's UI by navigating to Management->Saved Objects->Import. You should also set the dashboard Auto-Refresh interval so that the visualizations update in real-time. 
+ A json file containing saved objects and dashboards is provided under /resources. This file can be imported from Kibana's UI by navigating to Management->Saved Objects->Import. You should also set the dashboard Auto-Refresh interval so that the visualizations update in real-time.
 
 # Production Settings
  On a live system, vm_map_max_count should be permanently set in /etc/sysctl.conf:
