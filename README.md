@@ -1,10 +1,9 @@
 # CryptoTracker
-CryptoTracker enables monitoring of cryptocurrency exchanges to collect data for the algorithmic trading analysis.  Use this open source project to track Price, Bid/Ask, Size, and Volume to test hypotheses about Ethereum, build machine learning models to predict price movements, understand volatility, arbitrage and more.
+CryptoTracker enables monitoring of cryptocurrency exchanges to collect data for analysis, tracking, and algorithmic trading.  Use this open source project to track Price, Bid/Ask, Size, and Volume to test hypotheses about Ethereum, build machine learning models to predict price movements, understand volatility, arbitrage and more.
 
 CryptoTracker enables high-quality cryptocurrency R&D across all major, global exchanges.
 
 Pull Requests welcome and encouraged.
-
 
 # Supported Exchanges
  1. [BitFinex](https://bitfinex.com/)
@@ -31,7 +30,7 @@ Pull Requests welcome and encouraged.
 ```js
 docker-compose build && docker-compose up
 ```
-This will build then launch 3 docker containers. The first two being configurable builds Elastic Search and Kibana (customizable YML and Dockerfiles included). The third being a python2.7 container for our app which is automatically configured to run after an initial sleep timer. After the system loads, You should then be able to navigate to Kibana to see information starting to be entered into the system.
+This will build then launch 3 docker containers. The first two being configurable builds Elastic Search and Kibana (customizable YML and Dockerfiles included). The third being a python2.7 container for our app which is automatically configured to run after an initial sleep timer. After the system loads, you should then be able to navigate to Kibana to see information starting to be entered into the system.
 
 http://localhost:5601/
 
@@ -55,4 +54,4 @@ eth.*.ticker
 Use resources/configure-kibana.sh to automatically set default indexes, and import saved objects.
 # Provided By
 
-![EthVentures](https://github.com/EthVentures/CryptoTracker/raw/master/resources/img/ethventures-logo.png)
+[![EthVentures](https://github.com/EthVentures/CryptoTracker/raw/master/resources/img/ethventures-logo.png)](https://ethventures.io)
