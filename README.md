@@ -53,5 +53,7 @@ eth.*.ticker
 
 # Additional Resources
 Use resources/configure-kibana.sh to automatically set default indexes, and import saved objects.
-# Powered By
+# Provided By
+<p align="center">
 ![EthVentures](https://github.com/EthVentures/CryptoTracker/raw/master/resources/img/ethventures-logo.png)
+</p>
