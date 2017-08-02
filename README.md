@@ -20,8 +20,9 @@ Pull Requests welcome and encouraged.
 # Requirements
 1. [Docker](https://www.docker.com/community-edition)
 
-# Configuration
-1. Adjust timer settings in settings.py and log levels in default.env (optional)
+# Optional Configuration
+1. Adjust timer settings in settings.py
+2. Verbosity of logs can be configured in default.env 
 
 # Running
 ```js
