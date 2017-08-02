@@ -11,18 +11,17 @@ Pull Requests welcome and encouraged.
  5. [Kraken](https://kraken.com)
  6. [Poloniex](https://poloniex.com)
 
-# Screenshot
+# Screenshots
 
 ![Dashboard 1](./resources/img/Dashboard.png "Dashboard 1")
 
 ![Dashboard 2](./resources/img/Dashboard2.png "Dashboard 2")
 
 # Requirements
-1. [Docker](https://docker.com)
+1. [Docker](https://www.docker.com/community-edition)
 
 # Configuration
-1. Rename app/default.env to app/.env
-2. Adjust timer settings in settings.py (optional)
+1. Adjust timer settings in settings.py and log levels in default.env (optional)
 
 # Running
 ```js
@@ -36,6 +35,7 @@ If this is the first time running Kibana, it may take an additional minute to lo
 
 ```js
 eth.*.ticker
+btc.*.ticker
 *.*.ticker
 ```
 
