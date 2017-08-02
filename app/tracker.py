@@ -13,8 +13,8 @@ from public.kraken import Kraken_Market
 from public.poloniex import Poloniex_Market
 from dotenv import Dotenv
 from time import sleep
-import schedule
 import logging
+import schedule
 import settings
 import utils
 import random
@@ -23,29 +23,28 @@ import time
 def main():
     logging.basicConfig(format='%(levelname)s:%(asctime)s %(message)s',level=settings.LOGLEVEL)
     es = Elasticsearch(settings.ELASTICSEARCH_CONNECT_STRING)
-    logging.info('Application Started.')
-    exchanges = [GDAX_Market(),Gemini_Market(), BitTrex_Market(),BitFinex_Market(),Poloniex_Market()]
-
-    for exchange in exchanges:
-        logging.info(exchange.exchange + ': activated.')
 
     logging.info('Market Refresh Rate: ' + str(settings.MARKET_REFRESH_RATE) + ' seconds.')
     logging.info('Initial Sleep: ' + str(settings.INITIAL_SLEEP) + ' seconds.')
-    logging.info('Application Started.')
-    sleep(settings.INITIAL_SLEEP)
 
-    logging.info('Checking If Indices Exist...')
-    utils.create_indices(es, settings.INITIAL_INDEX_ARRAY)
+    sleep(settings.INITIAL_SLEEP)
+    logging.info('Application Started.')
+    exchanges = [GDAX_Market(), Gemini_Market(), BitTrex_Market(), BitFinex_Market(), Poloniex_Market(), Kraken_Market()]
+
+    #print active exchanges and create indexes in kibana based on products listed in each market
+    for exchange in exchanges:
+        logging.info(exchange.exchange + ': activated and indexed.')
+        for product, kibana_index in exchange.products.iteritems():
+            utils.create_index(es, kibana_index)
 
     logging.warn('Initiating Market Tracking.')
 
     #Record Ticks
     while True:
+        sleep(settings.MARKET_REFRESH_RATE)
         try:
             for exchange in exchanges:
                 exchange.record_ticker(es)
-
-            sleep(settings.MARKET_REFRESH_RATE)
 
         except Exception as e:
             logging.warning(e)
