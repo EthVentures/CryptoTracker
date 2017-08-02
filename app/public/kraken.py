@@ -11,7 +11,8 @@ class Kraken_Market(object):
     """ETH Kraken Market Data"""
     def __init__(self):
         self.api_url = settings.KRAKEN_API_URL
-        self.exchange = "kraken"
+        self.exchange = 'kraken'
+        self.index = 'eth.kraken.ticker'
         self.products = {'XETHZUSD':'eth.kraken.ticker'}
         if settings.KRAKEN_API_URL[-1] == "/":
             self.api_url = settings.KRAKEN_API_URL[:-1]
@@ -29,7 +30,7 @@ class Kraken_Market(object):
         """Get current tick"""
         payload = {'pair': product}
         now = datetime.utcnow()
-        r = requests.post(self.api_url + '/0/public/Ticker', data=payload)
+        r = requests.post(self.api_url + '/0/public/Ticker', data=payload, timeout=settings.API_TIMEOUT)
         data = loads(r.text)
         if 'result' in data:
             data = self.normalize_ticker(data["result"][product])

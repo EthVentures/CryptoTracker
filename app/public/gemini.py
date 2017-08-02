@@ -11,8 +11,7 @@ class Gemini_Market(object):
     """Gemini Market Data"""
     def __init__(self):
         self.api_url = settings.GEMINI_API_URL
-        self.exchange = "gemini"
-        self.books = ['asks','bids']
+        self.exchange = 'gemini'
         self.products = {'ETHUSD':'eth.gemini.ticker'}
         if settings.GEMINI_API_URL[-1] == "/":
             self.api_url = settings.GEMINI_API_URL[:-1]
@@ -28,7 +27,7 @@ class Gemini_Market(object):
         """Get current tick"""
         data = dict()
         now = datetime.utcnow()
-        r = requests.get(self.api_url + '/pubticker/' + product)
+        r = requests.get(self.api_url + '/pubticker/' + product, timeout=settings.API_TIMEOUT)
         data = loads(r.text)
         if 'last' in data:
             data = self.normalize_ticker(data)

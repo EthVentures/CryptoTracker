@@ -30,7 +30,7 @@ class BitFinex_Market(object):
     def get_ticker(self,product):
         """Get current tick"""
         now = datetime.utcnow()
-        r = requests.get(self.api_url + '/v1/pubticker/' + product)
+        r = requests.get(self.api_url + '/v1/pubticker/' + product, timeout=settings.API_TIMEOUT)
         data = loads(r.text)
         if 'last_price' in data:
             data = self.normalize_ticker(data)

@@ -11,8 +11,9 @@ class GDAX_Market(object):
     """GDAX Market Data"""
     def __init__(self):
         self.api_url = settings.GDAX_API_URL
-        self.exchange = "gdax"
-        self.products = {'ETH-USD': 'eth.gdax.ticker'}
+        self.exchange = 'gdax'
+        self.products = {'ETH-USD': 'eth.gdax.ticker',
+                         'BTC-USD': 'btc.gdax.ticker'}
         if settings.GDAX_API_URL[-1] == "/":
             self.api_url = settings.GDAX_API_URL[:-1]
 
@@ -32,7 +33,7 @@ class GDAX_Market(object):
         """Get current tick"""
         data = dict()
         now = datetime.utcnow()
-        r = requests.get(self.api_url + '/products/' + product + '/ticker')
+        r = requests.get(self.api_url + '/products/' + product + '/ticker', timeout=settings.API_TIMEOUT)
         data = loads(r.text)
         if 'price' in data:
             data = self.normalize_ticker(data)

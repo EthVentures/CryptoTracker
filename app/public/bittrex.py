@@ -11,7 +11,7 @@ class BitTrex_Market(object):
     """BitTrex Market Data"""
     def __init__(self):
         self.api_url = settings.BITTREX_API_URL
-        self.exchange = "bittrex"
+        self.exchange = 'bittrex'
         self.products = {'USDT-ETH':'eth.bittrex.ticker'}
         if settings.BITTREX_API_URL[-1] == "/":
             self.api_url = settings.BITTREX_API_URL[:-1]
@@ -27,7 +27,7 @@ class BitTrex_Market(object):
         """Get current tick"""
         payload = {'market': product}
         now = datetime.utcnow()
-        r = requests.post(self.api_url + '/v1.1/public/getticker', data=payload)
+        r = requests.post(self.api_url + '/v1.1/public/getticker', data=payload, timeout=settings.API_TIMEOUT)
         data = loads(r.text)
         if 'result' in data:
             data = self.clean_ticker(data["result"])

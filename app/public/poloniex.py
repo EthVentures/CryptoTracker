@@ -11,9 +11,8 @@ class Poloniex_Market(object):
     """Poloniex Market Data"""
     def __init__(self):
         self.api_url = settings.POLONIEX_API_URL
-        self.exchange = "poloniex"
+        self.exchange = 'poloniex'
         self.products = {'USDT_ETH': 'eth.poloniex.ticker'}
-        self.books = ['asks', 'bids']
         if settings.POLONIEX_API_URL[-1] == "/":
             self.api_url = settings.POLONIEX_API_URL[:-1]
 
@@ -27,7 +26,7 @@ class Poloniex_Market(object):
     def get_ticker(self, product):
         """Get current tick"""
         now = datetime.utcnow()
-        r = requests.get(self.api_url + '/public?command=returnTicker')
+        r = requests.get(self.api_url + '/public?command=returnTicker', timeout=settings.API_TIMEOUT)
         data = loads(r.text)
         if product in data:
             data = self.normalize_ticker(data[product])
