@@ -6,7 +6,7 @@ os.environ.update(dotenv)
 #timers in seconds
 MARKET_REFRESH_RATE=1
 RETRY_RATE=5
-API_TIMEOUT=2
+API_TIMEOUT=1
 
 BITFINEX_API_URL = os.environ.get("BITFINEX_API_URL")
 BITTREX_API_URL = os.environ.get("BITTREX_API_URL")

@@ -30,7 +30,6 @@ def main():
     sleep(settings.INITIAL_SLEEP)
     logging.info('Application Started.')
     exchanges = [GDAX_Market(), Gemini_Market(), BitTrex_Market(), BitFinex_Market(), Poloniex_Market(), Kraken_Market()]
-
     #print active exchanges and create indexes in kibana based on products listed in each market
     for exchange in exchanges:
         logging.info(exchange.exchange + ': activated and indexed.')

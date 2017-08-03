@@ -12,7 +12,8 @@ class Poloniex_Market(object):
     def __init__(self):
         self.api_url = settings.POLONIEX_API_URL
         self.exchange = 'poloniex'
-        self.products = {'USDT_ETH': 'eth.poloniex.ticker'}
+        self.products = {'USDT_ETH': 'eth.poloniex.ticker',
+                         'USDT_BTC': 'btc.poloniex.ticker'}
         if settings.POLONIEX_API_URL[-1] == "/":
             self.api_url = settings.POLONIEX_API_URL[:-1]
 
