@@ -14,7 +14,8 @@ class BitFinex_Market(object):
     def __init__(self):
         self.api_url = settings.BITFINEX_API_URL
         self.exchange = 'bitfinex'
-        self.products = {'ethusd':'eth.bitfinex.ticker'}
+        self.products = {'ethusd':'eth.bitfinex.ticker',
+                         'btcusd':'btc.bitfinex.ticker'}
         if settings.BITFINEX_API_URL[-1] == "/":
             self.api_url = settings.BITFINEX_API_URL[:-1]
 

@@ -3,20 +3,20 @@
     "_id": "291b86c0-7723-11e7-aecc-2b619a5de560",
     "_type": "dashboard",
     "_source": {
-      "title": "BtcTracker",
       "hits": 0,
-      "description": "An overview of Bitcoin market",
-      "panelsJSON": "[{\"size_x\":6,\"size_y\":4,\"panelIndex\":1,\"type\":\"visualization\",\"id\":\"97187230-7720-11e7-aecc-2b619a5de560\",\"col\":1,\"row\":1},{\"size_x\":6,\"size_y\":4,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"89946780-7721-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":1},{\"size_x\":6,\"size_y\":4,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"27c05900-7722-11e7-aecc-2b619a5de560\",\"col\":1,\"row\":5},{\"size_x\":6,\"size_y\":4,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"3c2831b0-7722-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":5}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{}",
-      "version": 1,
-      "timeRestore": true,
-      "timeTo": "now-0s/s",
       "timeFrom": "now-9h",
+      "timeRestore": true,
+      "description": "An overview of Bitcoin market",
+      "title": "BtcTracker",
+      "uiStateJSON": "{}",
+      "panelsJSON": "[{\"size_x\":6,\"size_y\":4,\"panelIndex\":1,\"type\":\"visualization\",\"id\":\"97187230-7720-11e7-aecc-2b619a5de560\",\"col\":1,\"row\":1},{\"size_x\":6,\"size_y\":4,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"89946780-7721-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":1},{\"size_x\":6,\"size_y\":4,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"27c05900-7722-11e7-aecc-2b619a5de560\",\"col\":1,\"row\":5},{\"size_x\":6,\"size_y\":4,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"3c2831b0-7722-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":5}]",
+      "timeTo": "now-0s/s",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "version": 1,
       "refreshInterval": {
-        "display": "5 seconds",
-        "pause": false,
         "section": 1,
+        "pause": false,
+        "display": "5 seconds",
         "value": 5000
       },
       "kibanaSavedObjectMeta": {
@@ -28,20 +28,20 @@
     "_id": "bebe74d0-4d98-11e7-b01c-01d7c285fb2b",
     "_type": "dashboard",
     "_source": {
-      "title": "EthTracker",
       "hits": 0,
-      "description": "An overview of Ethereum market",
-      "panelsJSON": "[{\"col\":7,\"id\":\"9d31f970-4def-11e7-ac11-fd3ac235e94c\",\"panelIndex\":2,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"7b7b7df0-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":3,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"97cd6680-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":4,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b1f36850-53d8-11e7-a4c5-436fffd47743\",\"panelIndex\":6,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-6\":{\"vis\":{\"legendOpen\":true}}}",
-      "version": 1,
-      "timeRestore": true,
-      "timeTo": "now-0s/s",
       "timeFrom": "now-9h",
+      "timeRestore": true,
+      "description": "An overview of Ethereum market",
+      "title": "EthTracker",
+      "uiStateJSON": "{\"P-6\":{\"vis\":{\"legendOpen\":true}}}",
+      "panelsJSON": "[{\"col\":7,\"id\":\"9d31f970-4def-11e7-ac11-fd3ac235e94c\",\"panelIndex\":2,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"7b7b7df0-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":3,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"97cd6680-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":4,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b1f36850-53d8-11e7-a4c5-436fffd47743\",\"panelIndex\":6,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
+      "timeTo": "now-0s/s",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "version": 1,
       "refreshInterval": {
-        "display": "5 seconds",
-        "pause": false,
         "section": 1,
+        "pause": false,
+        "display": "5 seconds",
         "value": 5000
       },
       "kibanaSavedObjectMeta": {
@@ -56,7 +56,7 @@
       "title": "CryptoTracker",
       "hits": 0,
       "description": "An overview of Cryptocurrency market",
-      "panelsJSON": "[{\"col\":1,\"id\":\"9d31f970-4def-11e7-ac11-fd3ac235e94c\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"7b7b7df0-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":3,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"97cd6680-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":4,\"row\":13,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b1f36850-53d8-11e7-a4c5-436fffd47743\",\"panelIndex\":6,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":4,\"panelIndex\":7,\"type\":\"visualization\",\"id\":\"97187230-7720-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":1},{\"size_x\":6,\"size_y\":4,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"89946780-7721-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":5},{\"size_x\":6,\"size_y\":4,\"panelIndex\":9,\"type\":\"visualization\",\"id\":\"27c05900-7722-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":9},{\"size_x\":6,\"size_y\":4,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"3c2831b0-7722-11e7-aecc-2b619a5de560\",\"col\":7,\"row\":13}]",
+      "panelsJSON": "[{\"col\":7,\"id\":\"9d31f970-4def-11e7-ac11-fd3ac235e94c\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"7b7b7df0-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":3,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"97cd6680-4df0-11e7-ac11-fd3ac235e94c\",\"panelIndex\":4,\"row\":13,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b1f36850-53d8-11e7-a4c5-436fffd47743\",\"panelIndex\":6,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"97187230-7720-11e7-aecc-2b619a5de560\",\"panelIndex\":7,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"89946780-7721-11e7-aecc-2b619a5de560\",\"panelIndex\":8,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"27c05900-7722-11e7-aecc-2b619a5de560\",\"panelIndex\":9,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"3c2831b0-7722-11e7-aecc-2b619a5de560\",\"panelIndex\":10,\"row\":13,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
       "optionsJSON": "{\"darkTheme\":false}",
       "uiStateJSON": "{\"P-6\":{\"vis\":{\"legendOpen\":true}}}",
       "version": 1,
@@ -78,10 +78,10 @@
     "_id": "bb5b3f60-5137-11e7-ad84-47fe41efe18c",
     "_type": "visualization",
     "_source": {
-      "title": "Arb",
       "visState": "{\"title\":\"Arb\",\"type\":\"line\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Datetime\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Bitfinex Ask\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"data\":{\"id\":\"4\",\"label\":\"Gdax Bid\"},\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":true,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"defaultYExtents\":true,\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"1-bucket\",\"enabled\":true,\"type\":\"filters\",\"schema\":{\"group\":\"none\",\"title\":\"Bucket Agg\",\"name\":\"bucketAgg\",\"aggFilter\":[],\"min\":0,\"max\":null,\"editor\":false,\"params\":[],\"deprecate\":false},\"params\":{\"filters\":[{\"input\":{\"query\":{\"term\":{\"_index\":\"eth.bitfinex.ticker\"}}},\"label\":\"\"}]}},\"customMetric\":{\"id\":\"1-metric\",\"enabled\":true,\"type\":\"avg\",\"schema\":{\"group\":\"none\",\"name\":\"metricAgg\",\"title\":\"Metric Agg\",\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"min\":0,\"max\":null,\"editor\":false,\"params\":[],\"deprecate\":false},\"params\":{\"field\":\"ask\",\"customLabel\":\"Bitfinex Ask\"}},\"customLabel\":\"Bitfinex Ask\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"time\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Datetime\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"4-bucket\",\"enabled\":true,\"type\":\"filters\",\"schema\":{\"group\":\"none\",\"title\":\"Bucket Agg\",\"name\":\"bucketAgg\",\"aggFilter\":[],\"min\":0,\"max\":null,\"editor\":false,\"params\":[],\"deprecate\":false},\"params\":{\"filters\":[{\"input\":{\"query\":{\"term\":{\"_index\":\"eth.gdax.ticker\"}}},\"label\":\"\"}]}},\"customMetric\":{\"id\":\"4-metric\",\"enabled\":true,\"type\":\"avg\",\"schema\":{\"group\":\"none\",\"name\":\"metricAgg\",\"title\":\"Metric Agg\",\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"min\":0,\"max\":null,\"editor\":false,\"params\":[],\"deprecate\":false},\"params\":{\"field\":\"bid\",\"customLabel\":\"Gdax Bid\"}},\"customLabel\":\"Gdax Bid\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
       "description": "",
+      "title": "Arb",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"eth.*.ticker\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
@@ -92,10 +92,10 @@
     "_id": "97187230-7720-11e7-aecc-2b619a5de560",
     "_type": "visualization",
     "_source": {
-      "title": "BTC Price",
       "visState": "{\"title\":\"BTC Price\",\"type\":\"line\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"tracker_time per 10 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"defaultYExtents\":true},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"BTC Price\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"BTC Price\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"price\",\"customLabel\":\"BTC Price\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"tracker_time\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"exchange.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Exchange\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "BTC Price",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"btc.*.ticker\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
@@ -106,10 +106,10 @@
     "_id": "89946780-7721-11e7-aecc-2b619a5de560",
     "_type": "visualization",
     "_source": {
-      "title": "BTC Bid-Ask",
       "visState": "{\"title\":\"BTC Bid-Ask\",\"type\":\"line\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"tracker_time per 10 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"defaultYExtents\":true},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Bid\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"data\":{\"id\":\"4\",\"label\":\"Ask\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"bid\",\"customLabel\":\"Bid\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"tracker_time\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ask\",\"customLabel\":\"Ask\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "BTC Bid-Ask",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"btc.*.ticker\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
@@ -120,10 +120,10 @@
     "_id": "27c05900-7722-11e7-aecc-2b619a5de560",
     "_type": "visualization",
     "_source": {
-      "title": "BTC Size",
       "visState": "{\"title\":\"BTC Size\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Datetime\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Size\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Size\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"size\",\"customLabel\":\"Size\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"tracker_time\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Datetime\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "BTC Size",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"btc.*.ticker\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
@@ -134,10 +134,10 @@
     "_id": "3c2831b0-7722-11e7-aecc-2b619a5de560",
     "_type": "visualization",
     "_source": {
-      "title": "BTC Volume",
       "visState": "{\"title\":\"BTC Volume\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Datetime\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Volume\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Volume\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"volume\",\"customLabel\":\"Volume\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"tracker_time\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Datetime\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "BTC Volume",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"btc.*.ticker\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
@@ -148,10 +148,10 @@
     "_id": "7b7b7df0-4df0-11e7-ac11-fd3ac235e94c",
     "_type": "visualization",
     "_source": {
-      "title": "ETH Size",
       "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Size\",\"field\":\"size\"},\"schema\":\"metric\",\"type\":\"avg\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Datetime\",\"extended_bounds\":{},\"field\":\"time\",\"interval\":\"m\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Datetime\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Size\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Size\"},\"type\":\"value\"}]},\"title\":\"ETH Size\",\"type\":\"histogram\"}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "ETH Size",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"eth.*.ticker\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
@@ -162,10 +162,10 @@
     "_id": "9d31f970-4def-11e7-ac11-fd3ac235e94c",
     "_type": "visualization",
     "_source": {
-      "title": "ETH Bid-Ask",
       "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Bid\",\"field\":\"bid\"},\"schema\":\"metric\",\"type\":\"avg\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Datetime\",\"extended_bounds\":{},\"field\":\"time\",\"interval\":\"m\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Ask\",\"field\":\"ask\"},\"schema\":\"metric\",\"type\":\"avg\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Datetime\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Bid\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"},{\"data\":{\"id\":\"3\",\"label\":\"Ask\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"defaultYExtents\":true,\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"\"},\"type\":\"value\"}]},\"title\":\"ETH Bid-Ask\",\"type\":\"line\"}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "ETH Bid-Ask",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"eth.*.ticker\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
@@ -176,10 +176,10 @@
     "_id": "b1f36850-53d8-11e7-a4c5-436fffd47743",
     "_type": "visualization",
     "_source": {
-      "title": "ETH Price",
       "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Price\",\"field\":\"price\"},\"schema\":\"metric\",\"type\":\"avg\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Datetime\",\"extended_bounds\":{},\"field\":\"tracker_time\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Exchange\",\"field\":\"exchange.keyword\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":5},\"schema\":\"group\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Datetime\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Price\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"defaultYExtents\":true,\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Price\"},\"type\":\"value\"}]},\"title\":\"ETH Price\",\"type\":\"line\"}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "ETH Price",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"eth.*.ticker\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
@@ -190,10 +190,10 @@
     "_id": "97cd6680-4df0-11e7-ac11-fd3ac235e94c",
     "_type": "visualization",
     "_source": {
-      "title": "ETH Volume",
       "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Volume\",\"field\":\"volume\"},\"schema\":\"metric\",\"type\":\"avg\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Datetime\",\"extended_bounds\":{},\"field\":\"time\",\"interval\":\"m\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Datetime\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Volume\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Volume\"},\"type\":\"value\"}]},\"title\":\"ETH Volume\",\"type\":\"histogram\"}",
-      "uiStateJSON": "{}",
       "description": "",
+      "title": "ETH Volume",
+      "uiStateJSON": "{}",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"eth.*.ticker\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"

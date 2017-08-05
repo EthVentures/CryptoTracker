@@ -22,7 +22,7 @@ Pull Requests welcome and encouraged.
 
 # Optional Configuration
 1. Adjust timer settings in settings.py
-2. Verbosity of logs can be configured in default.env 
+2. Verbosity of logs can be configured in default.env
 
 # Running
 ```js
@@ -40,7 +40,7 @@ btc.*.ticker
 *.*.ticker
 ```
 
- A json file containing saved objects and dashboards is provided under /resources. This file can be imported from Kibana's UI by navigating to Management->Saved Objects->Import. You should also set the dashboard Auto-Refresh interval so that the visualizations update in real-time.
+ A json file containing saved objects and dashboards is provided under /resources. This file can be imported from Kibana's UI by navigating to Management->Saved Objects->Import. Auto-Refresh interval on all dashboard has been preconfigured for 5 seconds.
 
 # Production Settings
  On a live system, vm_map_max_count should be permanently set in /etc/sysctl.conf:
@@ -50,7 +50,7 @@ btc.*.ticker
 ```
 
 # Additional Resources
-Use resources/configure-kibana.sh to automatically set default indexes, and import saved objects.
+In a development environment, a kibana configuration script is provided at resources/configure-kibana.sh to help automatically set default indexes, set refresh timers, and import all the graphs/dashboards. This configuration script is not recommended in production yet due to occasional issues with the discover tab not responding after import.
 # Provided By
 
 [![EthVentures](https://github.com/EthVentures/CryptoTracker/raw/master/resources/img/ethventures-logo.png)](https://ethventures.io)

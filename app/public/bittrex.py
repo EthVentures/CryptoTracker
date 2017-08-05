@@ -12,7 +12,8 @@ class BitTrex_Market(object):
     def __init__(self):
         self.api_url = settings.BITTREX_API_URL
         self.exchange = 'bittrex'
-        self.products = {'USDT-ETH':'eth.bittrex.ticker'}
+        self.products = {'USDT-ETH':'eth.bittrex.ticker',
+                         'USDT-BTC':'btc.bittrex.ticker'}
         if settings.BITTREX_API_URL[-1] == "/":
             self.api_url = settings.BITTREX_API_URL[:-1]
 

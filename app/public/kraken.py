@@ -12,8 +12,8 @@ class Kraken_Market(object):
     def __init__(self):
         self.api_url = settings.KRAKEN_API_URL
         self.exchange = 'kraken'
-        self.index = 'eth.kraken.ticker'
-        self.products = {'XETHZUSD':'eth.kraken.ticker'}
+        self.products = {'XETHZUSD':'eth.kraken.ticker',
+                         'XXBTZUSD':'btc.kraken.ticker'}
         if settings.KRAKEN_API_URL[-1] == "/":
             self.api_url = settings.KRAKEN_API_URL[:-1]
 

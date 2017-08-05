@@ -12,7 +12,8 @@ class Gemini_Market(object):
     def __init__(self):
         self.api_url = settings.GEMINI_API_URL
         self.exchange = 'gemini'
-        self.products = {'ETHUSD':'eth.gemini.ticker'}
+        self.products = {'ETHUSD':'eth.gemini.ticker',
+                         'BTCUSD':'btc.gemini.ticker'}
         if settings.GEMINI_API_URL[-1] == "/":
             self.api_url = settings.GEMINI_API_URL[:-1]
 
