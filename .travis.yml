@@ -1,0 +1,10 @@
+
+sudo: required
+services:
+  - docker
+
+script:
+  - docker-compose build
+  - docker-compose up -d
+  - docker-compose ps
+#  - docker-compose run test
