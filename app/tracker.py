@@ -6,6 +6,7 @@
 """
 from elasticsearch import Elasticsearch, helpers
 from public.bitfinex import BitFinex_Market
+from public.bitmex import BitMex_Market
 from public.bittrex import BitTrex_Market
 from public.gdax import GDAX_Market
 from public.gemini import Gemini_Market
@@ -29,7 +30,7 @@ def main():
 
     sleep(settings.INITIAL_SLEEP)
     logging.info('Application Started.')
-    exchanges = [GDAX_Market(), Gemini_Market(), BitTrex_Market(), BitFinex_Market(), Poloniex_Market(), Kraken_Market()]
+    exchanges = [GDAX_Market(), Gemini_Market(), BitTrex_Market(), BitMex_Market(), BitFinex_Market(), Poloniex_Market(), Kraken_Market()]
     #print active exchanges and create indexes in kibana based on products listed in each market
     for exchange in exchanges:
         logging.info(exchange.exchange + ': activated and indexed.')

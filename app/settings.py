@@ -9,6 +9,7 @@ RETRY_RATE=5
 API_TIMEOUT=1
 
 BITFINEX_API_URL = os.environ.get("BITFINEX_API_URL")
+BITMEX_API_URL = os.environ.get("BITMEX_API_URL")
 BITTREX_API_URL = os.environ.get("BITTREX_API_URL")
 GDAX_API_URL = os.environ.get("GDAX_API_URL")
 GEMINI_API_URL = os.environ.get("GEMINI_API_URL")

@@ -10,6 +10,7 @@ Pull Requests welcome and encouraged.
  4. [Gemini](https://gemini.com)
  5. [Kraken](https://kraken.com)
  6. [Poloniex](https://poloniex.com)
+ 7. [BitMex](https://www.bitmex.com)
 
 # Screenshots
 
