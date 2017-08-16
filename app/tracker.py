@@ -11,6 +11,7 @@ from public.bittrex import BitTrex_Market
 from public.gdax import GDAX_Market
 from public.gemini import Gemini_Market
 from public.kraken import Kraken_Market
+from public.okcoin import OKCoin_Market
 from public.poloniex import Poloniex_Market
 from dotenv import Dotenv
 from time import sleep
@@ -30,7 +31,10 @@ def main():
 
     sleep(settings.INITIAL_SLEEP)
     logging.info('Application Started.')
-    exchanges = [GDAX_Market(), Gemini_Market(), BitTrex_Market(), BitMex_Market(), BitFinex_Market(), Poloniex_Market(), Kraken_Market()]
+    #supported_exchanges = [BitFinex_Market(), BitMex_Market(), BitTrex_Market(), GDAX_Market(), Gemini_Market(), Kraken_Market(), OKCoin_Market(), Poloniex_Market()]
+    exchanges = [BitFinex_Market(), BitMex_Market(), BitTrex_Market(), GDAX_Market(), Gemini_Market(), Kraken_Market(), OKCoin_Market(), Poloniex_Market()]
+
+
     #print active exchanges and create indexes in kibana based on products listed in each market
     for exchange in exchanges:
         logging.info(exchange.exchange + ': activated and indexed.')

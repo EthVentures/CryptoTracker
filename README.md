@@ -1,4 +1,7 @@
 # CryptoTracker
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/EthVentures/CryptoTracker)
 CryptoTracker makes it easy for you to collect, store, analyze, visualize, and monitor cryptocurrency data. You can use this open source project to track Price, Bid/Ask Spreads, Size, and Volume, test hypotheses about markets, build machine learning models to predict price movements, understand volatility, arbitrage / algorithmically trade, and more. CryptoTracker enables high-quality cryptocurrency R&D across all major exchanges.
 
 Pull Requests welcome and encouraged.
@@ -6,11 +9,13 @@ Pull Requests welcome and encouraged.
 # Supported Exchanges
  1. [BitFinex](https://bitfinex.com/)
  2. [BitTrex](https://bittrex.com/)
- 3. [GDAX](https://gdax.com)
- 4. [Gemini](https://gemini.com)
- 5. [Kraken](https://kraken.com)
- 6. [Poloniex](https://poloniex.com)
- 7. [BitMex](https://www.bitmex.com)
+ 3. [Bitmex](https://bitmex.com/)
+ 4. [GDAX](https://gdax.com)
+ 5. [Gemini](https://gemini.com)
+ 6. [Kraken](https://kraken.com)
+ 7. [OKCoin](https://www.okcoin.com/)
+ 8. [Poloniex](https://poloniex.com)
+ 9. [BitMex](https://www.bitmex.com)
 
 # Screenshots
 
