@@ -1,7 +1,5 @@
+[![Build Status](https://travis-ci.org/EthVentures/CryptoTracker.svg?branch=master)](https://travis-ci.org/EthVentures/CryptoTracker)
 # CryptoTracker
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/EthVentures/CryptoTracker)
 CryptoTracker makes it easy for you to collect, store, analyze, visualize, and monitor cryptocurrency data. You can use this open source project to track Price, Bid/Ask Spreads, Size, and Volume, test hypotheses about markets, build machine learning models to predict price movements, understand volatility, arbitrage / algorithmically trade, and more. CryptoTracker enables high-quality cryptocurrency R&D across all major exchanges.
 
 Pull Requests welcome and encouraged.
