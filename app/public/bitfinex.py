@@ -9,7 +9,8 @@ import random
 import time
 import utils
 
-class BitFinex_Market(object):
+
+class BitfnexMarket(object):
     """Bitfinex Market Data"""
     def __init__(self):
         self.api_url = settings.BITFINEX_API_URL

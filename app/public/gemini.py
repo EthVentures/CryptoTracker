@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class Gemini_Market(object):
+
+class GeminiMarket(object):
     """Gemini Market Data"""
     def __init__(self):
         self.api_url = settings.GEMINI_API_URL

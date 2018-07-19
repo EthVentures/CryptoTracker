@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class BitTrex_Market(object):
+
+class BitTrexMarket(object):
     """BitTrex Market Data"""
     def __init__(self):
         self.api_url = settings.BITTREX_API_URL

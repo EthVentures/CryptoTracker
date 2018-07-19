@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class BitMex_Market(object):
+
+class BitMexMarket(object):
     """BitMex Market Data"""
     def __init__(self):
         self.api_url = settings.BITMEX_API_URL

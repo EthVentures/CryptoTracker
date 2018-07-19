@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class OKCoin_Market(object):
+
+class OkCoinMarket(object):
     """OKCOIN Market Data"""
     def __init__(self):
         self.api_url = settings.OKCOIN_API_URL
