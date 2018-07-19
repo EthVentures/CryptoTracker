@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class Kraken_Market(object):
+
+class KrakenMarket(object):
     """ETH Kraken Market Data"""
     def __init__(self):
         self.api_url = settings.KRAKEN_API_URL

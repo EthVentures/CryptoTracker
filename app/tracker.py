@@ -5,14 +5,14 @@
           avelkoski
 """
 from elasticsearch import Elasticsearch, helpers
-from public.bitfinex import BitFinex_Market
-from public.bitmex import BitMex_Market
-from public.bittrex import BitTrex_Market
-from public.gdax import GDAX_Market
-from public.gemini import Gemini_Market
-from public.kraken import Kraken_Market
-from public.okcoin import OKCoin_Market
-from public.poloniex import Poloniex_Market
+from public.bitfinex import BitfnexMarket
+from public.bitmex import BitMexMarket
+from public.bittrex import BitTrexMarket
+from public.gdax import GDAXMarket
+from public.gemini import GeminiMarket
+from public.kraken import KrakenMarket
+from public.okcoin import OkCoinMarket
+from public.poloniex import PloloniexMarket
 from dotenv import Dotenv
 from time import sleep
 import logging
@@ -21,6 +21,18 @@ import settings
 import utils
 import random
 import time
+
+support_exchange = [
+    BitTrexMarket,
+    BitMexMarket,
+    GDAXMarket,
+    GeminiMarket,
+    KrakenMarket,
+    OkCoinMarket,
+    PloloniexMarket,
+    BitfnexMarket
+]
+
 
 def main():
     logging.basicConfig(format='%(levelname)s:%(asctime)s %(message)s',level=settings.LOGLEVEL)
@@ -31,11 +43,9 @@ def main():
 
     sleep(settings.INITIAL_SLEEP)
     logging.info('Application Started.')
-    #supported_exchanges = [BitFinex_Market(), BitMex_Market(), BitTrex_Market(), GDAX_Market(), Gemini_Market(), Kraken_Market(), OKCoin_Market(), Poloniex_Market()]
-    exchanges = [BitFinex_Market(), BitMex_Market(), BitTrex_Market(), GDAX_Market(), Gemini_Market(), Kraken_Market(), OKCoin_Market(), Poloniex_Market()]
+    exchanges = [ex() for ex in support_exchange]
 
-
-    #print active exchanges and create indexes in kibana based on products listed in each market
+    # print active exchanges and create indexes in kibana based on products listed in each market
     for exchange in exchanges:
         logging.info(exchange.exchange + ': activated and indexed.')
         for product, kibana_index in exchange.products.iteritems():
@@ -43,7 +53,7 @@ def main():
 
     logging.warn('Initiating Market Tracking.')
 
-    #Record Ticks
+    # Record Ticks
     while True:
         sleep(settings.MARKET_REFRESH_RATE)
         try:
@@ -53,6 +63,7 @@ def main():
         except Exception as e:
             logging.warning(e)
             sleep(settings.RETRY_RATE)
+
 
 if __name__ == '__main__':
     main()

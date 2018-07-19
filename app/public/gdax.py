@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class GDAX_Market(object):
+
+class GDAXMarket(object):
     """GDAX Market Data"""
     def __init__(self):
         self.api_url = settings.GDAX_API_URL

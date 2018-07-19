@@ -7,7 +7,8 @@ import logging
 import requests
 import utils
 
-class Poloniex_Market(object):
+
+class PloloniexMarket(object):
     """Poloniex Market Data"""
     def __init__(self):
         self.api_url = settings.POLONIEX_API_URL
