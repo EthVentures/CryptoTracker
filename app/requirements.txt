@@ -13,6 +13,6 @@ pycparser==2.17
 requests==2.17.3
 schedule==0.4.3
 six==1.10.0
-urllib3==1.21.1
+urllib3==1.24.2
 websocket==0.2.1
 websocket-client==0.40.0
